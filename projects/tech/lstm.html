@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LSTM Stock Market Forecasting</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../style.css">
+    <script defer src="../../app.js"></script>
+
+    <style>
+
+    section {
+      min-height: 10vh;
+      margin: 5px 0;
+    }
+
+    .button-container {
+      display: inline-block;
+      width: 300px; 
+      height: 70px; 
+      border-radius: 20px; 
+      background-color: #00cc00;
+      margin-left: calc(50% - 150px);
+      transition: filter 0.3s ease;
+      object-fit: cover;
+    }
+
+    .button-container:hover {
+      filter: brightness(120%) drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+    }
+
+    .button-9 {
+      appearance: button;
+      backface-visibility: hidden;
+      background-color: #405cf5;
+      border-radius: 15px;
+      border-width: 0;
+      box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset,rgba(50, 50, 93, .1) 0 2px 5px 0,rgba(0, 0, 0, .07) 0 1px 1px 0;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      font-family: -apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif;
+      font-size: 100%;
+      height: 30px;
+      line-height: 1.15;
+      margin: 12px 0 0;
+      outline: none;
+      overflow: hidden;
+      padding: 0 25px;
+      position: relative;
+      text-align: center;
+      text-transform: none;
+      transform: translateZ(0);
+      transition: all .2s,box-shadow .08s ease-in;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+      width: 100%;
+    }
+
+    .button-9:disabled {
+      cursor: default;
+    }
+
+    .button-9:focus {
+      box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+    }
+
+    .flexbox {
+      display: flex;
+      margin-left: 200px;
+      margin-right: 225px;
+      width: auto;
+      height: 10px;
+      gap: 20px;
+    }
+
+    .pointer {
+      text-align: left;
+      margin-left: 225px;
+      margin-top: 80px;
+      margin-right: 225px;
+    }
+
+    </style>
+</head>
+<body>
+    <header class="mb-auto">
+        <div>
+          <nav class="nav nav-masthead float-md-end page-title" style="justify-content: center;">
+            <a class="nav-link fw-bold py-1 px-0" href="../../index.html">Home</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../../index.html#aboutme">About</a>
+            <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../../projects/projects.html">Projects</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../../resume/resume.html">Resume</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../../index.html#contactme">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container3" style="margin-top: 100px; margin-bottom: 20px;">
+        <img src="https://img.freepik.com/premium-photo/wide-format-modern-stock-market-information-ripple-curve-concept-illustration_1127-22331.jpg"
+             alt="project-photo">
+      </div>
+      
+      <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
+        <h1 class="large primary" style="text-align: left;">LSTM Based Stock Market Time Series Forecasting</h1>
+        <p class="semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> WiDS, 2024 </p>
+      </section>
+
+      <section class="flexbox" style="margin-bottom: -40px; margin-top: 30px;">
+        <button class="button-9" role="button">Time Series Forecasting</button>
+        <button class="button-9" role="button">LSTM Neural Network</button>
+        <button class="button-9" role="button">Tensorflow</button>
+        <button class="button-9" role="button">Stock Market</button>
+      </section>
+
+      <section>
+        <p class="pointer" style="margin-bottom: -50px">• Pre-processed the data to a balanced one having a 50:50 ratio using window sliding algorithm and removing outliers</p>
+        <p class="pointer" style="margin-bottom: -50px">• Analyzed, applied and compared different LSTM Neural-Network architectures for best possible predictive accuracy</p>
+        <p class="pointer" style="margin-bottom: 40px">• Hypertuned the parameters to restrict the model to 6.24 MSE and 4.86 MAE on the predicted Amazon stock price</p>
+      </section>
+
+      <section>
+      <div class="button-container">
+        <button type="button" class="btn btn-dark" style="width: 300px; height: 70px; border-radius: 20px; background-color: #00cc00;">
+          <a href="#link" style="color: white;">Check out documentation!</a>
+        </button>
+      </div>
+      </section>
+
+      <section>
+        <script defer src="app.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+      </section>
+
+      <div id="footer-placeholder"></div>
+</body>
+</html>

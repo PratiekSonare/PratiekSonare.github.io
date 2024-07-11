@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+  background: rgb(19,19,22);
+  background: linear-gradient(35deg, rgba(19,19,22,1) 49%, rgba(0,13,97,1) 95%, rgba(56,0,153,1) 100%);
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.primary {
+  color: #ffffff;
+}
+
+.secondary {
+  color: rgb(193, 193, 193);
+}
+
+.tertiary {
+  color: rgb(193, 193, 193);
+}
+
+.large {
+  font-size: 30px;
+  font-weight: 800;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.semi-large {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.medium {
+  font-size: 20px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.small {
+  font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  min-height: 10vh;
+  margin: 20px 0;
+}
+
+section h2, section p {
+  margin: 10px;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0px);
+  transform: translateX(0);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.circular-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-top: 50px;
+  object-fit: cover;
+  box-shadow: 1px 3.5px 22px 3px #000000;
+}
+
+.center {
+  text-align: center;
+  /*margin-left: 275px;
+  margin-right: 275px;*/
+}
+
+.left {
+  text-align: left;
+  margin-left: 255px;
+  margin-right: 255px;
+}
+
+.image-container {
+  display: flex;
+  
+}
+
+.image-container img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.container2 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2:hover, span:hover {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 
+               0 0 10px rgba(255, 255, 255, 0.5),
+               0 0 15px rgba(255, 255, 255, 0.5),
+               0 0 20px rgba(255, 255, 255, 0.5);
+  transition: text-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+/*
+ * Header
+ */
+.nav-masthead .nav-link {
+  color: rgba(255, 255, 255, .5);
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+} 
+
+
+.page-title {
+  margin: 0 20px;
+  margin-top: 5px;
+}
+
+.rounded-3 {
+  border-radius: var(--bs-border-radius-lg) !important;
+}
+
+.bg-body-tertiary {
+  --bs-bg-opacity: 1;
+  background-color: grey;
+}
+
+.border {
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+}
+
+.centered-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Center the image container and its contents */
+.image-container {
+  display: flex;
+  justify-content: center;
+  /* gap: 20px;  Adjust the gap between icons as needed */
+  padding: 0; /* Add padding inside the container */
+}
+
+.contact-box {
+  border: 1px solid #ffffff;
+  border-radius: 0.375rem;
+  margin: 10px 50px;
+}
+
+/* Style individual social icons */
+.social-icon {
+  width: 100px; /* Adjust the size of icons as needed */
+  height: 100px;
+  margin-bottom: -30px;
+  object-fit: fill; /* Ensure images maintain aspect ratio */
+}
+
+.scrolling-wrapper {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: scroll 20s linear infinite;
+}
+
+.project-card {
+  display: inline-block;
+  width: 250px;  /* Increase the width */
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card .card-body {
+  text-align: center;
+  padding: 15px;  /* Add padding to give some space around the text */
+}
+
+.card-title {
+  font-size: 1.25rem;  /* Adjust font size if needed */
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;  /* Adjust font size if needed */
+  margin-bottom: 15px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.contact {
+  text-align: left; 
+  margin-left: 80px; 
+  margin-bottom: 20px;
+}
+
+
+/* project slider */
+.slider{
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: visible;
+  margin-left: -90px;
+  justify-content: center;
+  align-items: center;
+}
+.item{
+  position: absolute;
+  width: 400px;
+  height: auto;
+  text-align: justify;
+  background-color: #004ebc;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.5s;
+  left: calc(50% - 110px);
+  top: 0;
+}
+#next, #prev{
+  position: absolute;
+  top: 40%;
+  color: #004ebc;
+  background-color: transparent;
+  border: none;
+  font-size: xxx-large;
+  font-family: monospace;
+  font-weight: bold;
+  left: 300px;
+  justify-content: center;
+}
+#next{
+  left: unset;
+  right: 100px;
+}
