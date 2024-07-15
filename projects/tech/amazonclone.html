@@ -67,22 +67,6 @@
       box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
     }
 
-    .flexbox {
-      display: flex;
-      margin-left: 200px;
-      margin-right: 225px;
-      width: auto;
-      height: 10px;
-      gap: 20px;
-    }
-
-    .pointer {
-      text-align: left;
-      margin-left: 225px;
-      margin-top: 80px;
-      margin-right: 225px;
-    }
-
     </style>
 </head>
 <body>
@@ -91,6 +75,7 @@
           <nav class="nav nav-masthead float-md-end page-title" style="justify-content: center;">
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html">Home</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#aboutme">About</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../index.html#lifeatiitb">Life at IITB</a>
             <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../../projects/projects.html">Projects</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../resume/resume.html">Resume</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#contactme">Contact</a>
@@ -103,31 +88,33 @@
              alt="project-photo">
       </div>
       
-      <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
-        <h1 class="large primary left">Amazon Clone App</h1>
-        <p class="semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> SOC, 2024</p>
-      </section>
+      <div class="text-container">
+        <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
+          <h1 class="large project-large primary left">Amazon Clone App</h1>
+          <p class="semi-large project-semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> SOC, 2024</p>
+        </section>
 
-      <section class="flexbox" style="margin-bottom: -40px; margin-top: 30px">
-        <button class="button-9" role="button">Flutter</button>
-        <button class="button-9" role="button">Dart</button>
-        <button class="button-9" role="button">MongoDB</button>
-        <button class="button-9" role="button">Node.js</button>
-      </section>
+        <section class="flexbox grid">
+          <button class="button-9" role="button">Flutter</button>
+          <button class="button-9" role="button">Dart</button>
+          <button class="button-9" role="button">MongoDB</button>
+          <button class="button-9" role="button">Node.js</button>
+        </section>
 
-      <section>
-        <p class="pointer" style="margin-bottom: -50px">• Implemented robust email and password authentication along with state persistence, enabling users to search and filter products by category, view detailed product information and leave ratings. Also provided a "Deal of the Day" feature that updates dynamically, cart along with support for Google and Apple Pay.</p>
-        <p class="pointer" style="margin-bottom: -50px">• Additionally, designed a user-friendly order management system allowing users to view their orders and order details, including status, and providing a sign-out option.</p>
-        <p class="pointer" style="margin-bottom: 40px">• Built an admin panel with functionality like the ability to view all products, add and delete products, manage orders, change order status, track total earnings and visualise category-based earnings on an interactive graph.</p>
-      </section>
+        <section>
+          <p class="pointer" style="margin-bottom: -50px">• Implemented robust email and password authentication along with state persistence, enabling users to search and filter products by category, view detailed product information and leave ratings. Also provided a "Deal of the Day" feature that updates dynamically, cart along with support for Google and Apple Pay.</p>
+          <p class="pointer" style="margin-bottom: -50px">• Additionally, designed a user-friendly order management system allowing users to view their orders and order details, including status, and providing a sign-out option.</p>
+          <p class="pointer" style="margin-bottom: 40px">• Built an admin panel with functionality like the ability to view all products, add and delete products, manage orders, change order status, track total earnings and visualise category-based earnings on an interactive graph.</p>
+        </section>
 
-      <section>
-      <div class="button-container">
-        <button type="button" class="btn btn-dark" style="width: 300px; height: 70px; border-radius: 20px; background-color: #00cc00;">
-          <a href="#link" style="color: white;">Check out documentation!</a>
-        </button>
+        <section>
+        <div class="button-container">
+          <button type="button" class="btn btn-dark" style="width: 300px; height: 70px; border-radius: 20px; background-color: #00cc00;">
+            <a href="#link" style="color: white;">Check out documentation!</a>
+          </button>
+        </div>
+        </section>
       </div>
-      </section>
 
       <section>
         <script defer src="app.js"></script>

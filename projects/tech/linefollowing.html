@@ -67,22 +67,6 @@
       box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
     }
 
-    .flexbox {
-      display: flex;
-      margin-left: 200px;
-      margin-right: 225px;
-      width: auto;
-      height: 10px;
-      gap: 20px;
-    }
-
-    .pointer {
-      text-align: left;
-      margin-left: 225px;
-      margin-top: 80px;
-      margin-right: 225px;
-    }
-
     </style>
 </head>
 <body>
@@ -91,6 +75,7 @@
           <nav class="nav nav-masthead float-md-end page-title" style="justify-content: center;">
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html">Home</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#aboutme">About</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../index.html#lifeatiitb">Life at IITB</a>
             <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../../projects/projects.html">Projects</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../resume/resume.html">Resume</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#contactme">Contact</a>
@@ -103,12 +88,13 @@
              alt="project-photo">
       </div>
       
+      <div class="text-container">
       <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
-        <h1 class="large primary left">Line Following Robot</h1>
-        <p class="semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> Course-Project</p>
+        <h1 class="large primary left project-large">Line Following Robot</h1>
+        <p class="semi-large secondary project-semi-large" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> Course-Project</p>
       </section>
 
-      <section class="flexbox" style="margin-bottom: -40px; margin-top: 30px">
+      <section class="flexbox grid" style="margin-bottom: -40px; margin-top: 30px">
         <button class="button-9" role="button">Arduino</button>
         <button class="button-9" role="button">AutoCAD 360</button>
         <button class="button-9" role="button">ESP 32</button>
@@ -135,7 +121,7 @@
         <script defer src="app.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
       </section>
-
+    </div>
       <div id="footer-placeholder"></div>
 </body>
 </html>

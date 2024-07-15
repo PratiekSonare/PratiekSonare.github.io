@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Your Website Title</title>
+    <style>
+        html, body {
+            background-color: gray;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 75px;
+            text-align: center;
+        }
+
+        .container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+
+        .container h2, .container p {
+            margin: 10px 0;
+        }
+
+        /* Responsive styles */
+        @media (min-width: 600px) {
+            .container {
+                flex-direction: row;
+            }
+            
+            .container img {
+                margin: 0;
+                margin-right: 20px;
+            }
+
+            .container div {
+                text-align: left;
+            }
+        }
+
+        .primary {
+            font-size: 75px;
+        }
+
+        .secondary {
+            font-size: 20px;
+        }
+
+        .tertiary {
+            font-size: 20px;
+        }
+
+        .hover {
+            color: red;
+        }
+
+        .hover:hover {
+            color: lightskyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="../assets/mypic.jpg">
+        <div>
+            <h2 class="primary large left hover"> Pratiek Sonare </h2>
+            <p class="secondary semi-large left"> <span class="hover">Third Year</span> at <span class="hover" style="color: lightskyblue;">IIT Bombay</span></p>
+            <p class="tertiary medium left"> Metallurgical Engineering and Materials Science </p>
+        </div>
+    </div>
+</body>
+</html>
