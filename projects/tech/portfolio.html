@@ -67,22 +67,6 @@
       box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
     }
 
-    .flexbox {
-      display: flex;
-      margin-left: 200px;
-      margin-right: 225px;
-      width: auto;
-      height: 10px;
-      gap: 20px;
-    }
-
-    .pointer {
-      text-align: left;
-      margin-left: 225px;
-      margin-top: 80px;
-      margin-right: 225px;
-    }
-
     </style>
 
 </head>
@@ -92,6 +76,7 @@
           <nav class="nav nav-masthead float-md-end page-title" style="justify-content: center;">
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html">Home</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#aboutme">About</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../index.html#lifeatiitb">Life at IITB</a>
             <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../../projects/projects.html">Projects</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../resume/resume.html">Resume</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#contactme">Contact</a>
@@ -104,12 +89,13 @@
              alt="project-photo">
       </div>
       
+      <div class="text-container">
       <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
-        <h1 class="large primary left">Personal Portfolio Website</h1>
-        <p class="semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> Self-Project</p>
+        <h1 class="large primary left project-large">Personal Portfolio Website</h1>
+        <p class="semi-large secondary project-semi-large" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> Self-Project</p>
       </section>
 
-      <section class="flexbox" style="margin-bottom: -40px; margin-top: 30px">
+      <section class="flexbox grid" style="margin-bottom: -40px; margin-top: 30px">
         <button class="button-9" role="button">HTML</button>
         <button class="button-9" role="button">CSS</button>
         <button class="button-9" role="button">JavaScript</button>
@@ -117,9 +103,9 @@
       </section>
 
       <section>
-        <p class="pointer" style="margin-bottom: -50px">• </p>
-        <p class="pointer" style="margin-bottom: -50px">• </p>
-        <p class="pointer" style="margin-bottom: 40px">• </p>
+        <p class="pointer" style="margin-bottom: -50px">• Integrated JavaScript to enable animations and interactive features like project sliders and collapsible blog sections</p>
+        <p class="pointer" style="margin-bottom: -50px">• Utilized Bootstrap framework to enhance and ensure a consistent design and functionality across different browsers</p>
+        <p class="pointer" style="margin-bottom: 40px">• Created custom CSS layouts, styles and media queries to achieve a unique, personalized and responsive website design</p>
       </section>
 
       <section>
@@ -129,7 +115,7 @@
         </button>
       </div>
       </section>
-
+    </div>
       <section>
         <script defer src="app.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>

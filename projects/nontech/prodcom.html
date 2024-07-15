@@ -67,22 +67,6 @@
       box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
     }
 
-    .flexbox {
-      display: flex;
-      margin-left: 200px;
-      margin-right: 225px;
-      width: auto;
-      height: 10px;
-      gap: 20px;
-    }
-
-    .pointer {
-      text-align: left;
-      margin-left: 225px;
-      margin-top: 80px;
-      margin-right: 225px;
-    }
-
     </style>
 </head>
 <body>
@@ -91,6 +75,7 @@
           <nav class="nav nav-masthead float-md-end page-title" style="justify-content: center;">
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html">Home</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#aboutme">About</a>
+            <a class="nav-link fw-bold py-1 px-0" href="../index.html#lifeatiitb">Life at IITB</a>
             <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="../../projects/projects.html">Projects</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../resume/resume.html">Resume</a>
             <a class="nav-link fw-bold py-1 px-0" href="../../index.html#contactme">Contact</a>
@@ -98,35 +83,42 @@
         </div>
       </header>
 
-      <div class="container3" style="margin-top: 100px; margin-bottom: 20px;">
-        <img src="https://tbcdn.talentbrew.com/company/234/cms/banner-images/product-banner.png"
-             alt="project-photo">
-      </div>
+
       
-      <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
-        <h1 class="large primary left">ProdCom 2024</h1>
-        <p class="semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> Self-Project</p>
-      </section>
+        <div class="container3" style="margin-top: 100px; margin-bottom: 20px;">
+          <img src="https://tbcdn.talentbrew.com/company/234/cms/banner-images/product-banner.png"
+              alt="project-photo">
+        </div>
+      
+      <div class="text-container">
+        <section style="margin-left: 175px; display: flex; justify-content: space-between; margin-bottom: -30px;">
+          <h1 class="large project-large primary left">ProdCom 2024</h1>
+          <p class="semi-large project-semi-large secondary" style="color: rgb(127, 210, 3); text-align: right; margin-right: 225px;"> Technical <br> Self-Project</p>
+        </section>
 
-      <section class="flexbox" style="margin-bottom: -40px; margin-top: 30px">
-        <button class="button-9" role="button">Product Management</button>
-        <button class="button-9" role="button">Problem Solving</button>
-        <button class="button-9" role="button">Presentation</button>
-      </section>
+        <section class="flexbox grid">
+          <button class="button-9" role="button">Product Management</button>
+          <button class="button-9" role="button">Problem Solving</button>
+          <button class="button-9" role="button">Presentation</button>
+        </section>
 
-      <section>
-        <p class="pointer" style="margin-bottom: -50px">• </p>
-        <p class="pointer" style="margin-bottom: -50px">• </p>
-        <p class="pointer" style="margin-bottom: 40px">• </p>
-      </section>
+        <section>
+          <p class="pointer" style="margin-bottom: -50px">• Secured 3rd position out of 40+ participants in the annual product management competition held by the Consult
+            Club, IIT Bombay by suggesting ways of enhancing user interaction and traction on Instiapp through new features</p>
+          <p class="pointer" style="margin-bottom: -50px">• Conducted primary research, taking extensive user feedback from students to find major pain-points in the InstiApp</p>
+          <p class="pointer" style="margin-bottom: -50px"> • Generated user personas, designed app mock-ups to effectively deliver the need for suggested changes in the InstiApp</p>
+          <p class="pointer" style="margin-bottom: 40px">• Raised issues in the app such as the lack of academic resources, need for notifications etc. and suggested additional
+            features such as including personal development tools that would potentially improve user engagement and retention </p>
+        </section>
 
-      <section>
-      <div class="button-container">
-        <button type="button" class="btn btn-dark" style="width: 300px; height: 70px; border-radius: 20px; background-color: #00cc00;">
-          <a href="#link" style="color: white;">Check out documentation!</a>
-        </button>
+        <section>
+        <div class="button-container">
+          <button type="button" class="btn btn-dark" style="width: 300px; height: 70px; border-radius: 20px; background-color: #00cc00;">
+            <a href="#link" style="color: white;">Check out documentation!</a>
+          </button>
+        </div>
+        </section>
       </div>
-      </section>
 
       <section>
         <script defer src="app.js"></script>

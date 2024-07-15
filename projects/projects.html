@@ -51,6 +51,19 @@
           padding: 0;
         }
 
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .break {
+          margin: 30px;
+          @media (max-width: 600px) {
+            margin: 50px;
+          }
+        }
+
     </style>
 </head>
 <body>
@@ -71,16 +84,17 @@
 
   <!-- myprojects -->
   <section class="" style="margin-top: 200px;" id="myprojects">
-    <h2 class="primary large center" style="margin-bottom: 100px; font-size: 100px;">Projects</h2>
+    <h2 class="primary large center text-style" style="margin-bottom: 100px;">Projects</h2>
 
     <p class="tertiary medium center" style="font-size: 20px;"> Technical Projects </p>
-    <div class="slider slider1" style="margin-top: 10px;" id="slider1">
+    <div class="container slider slider1" style="margin-top: 10px;" id="slider1">
     
     <a href="./tech/ebookstore.html" class="item" style="text-decoration: none; color: inherit;">
       <div>
         <h1>E-Book Store Website</h1>
         <p class="date">Summer '24</p>
-        <p class="secondary"> Trying to start a book-lending service of my own in IIT Bombay! My first step towrad entrepreneurship!
+        <p class="secondary"> Reading books has evolved from a thing I do once in a while to one of my favourite hobbies! Trying to start a book-lending service of my own in IIT Bombay! 
+          My first step towrad entrepreneurship! Only time will tell how far we go...
         </p> 
       </div>
     </a>
@@ -110,7 +124,7 @@
         <h1>LSTM Based Stock Market Prediction</h1>
         <p class="date">Winter '23</p>
         <p class="secondary"> My first AI/ML project! I was interested in exploring finance at that point of time, during my second year
-          and it was interesting how one could use algorithms to predict stock prices (well, it would be unfair to say "predict" :3 )!
+          and it was interesting how one could use algorithms to predict stock prices (well, it would be unfair to say "predict")!
         </p> 
       </div>
     </a>
@@ -120,7 +134,7 @@
         <h1>Fabrication of a Low-Cost Spin Coater</h1>
         <p class="date">Winter '23</p>
           <p class="secondary"> A leap towards machine-building! I've always been fascinated about electronics (given by background xD). This project incorporated both
-            of my interests - technology and materials science. I always wanted to try out fabrication and after this project, I don't think I will xD
+            of my interests - technology and materials science.
           </p> 
       </div>
     </a>
@@ -149,10 +163,10 @@
       <button id="prev1"> < </button>
     </div>
 
-  <br>
+  <div class="break"></div>
 
   <p class="tertiary medium center" style="font-size: 20px;"> Non-Technical Projects </p>
-    <div class="slider slider2" style="margin-top: 10px; ;" id="slider2">
+    <div class="container slider slider2" style="margin-top: 10px; ;" id="slider2">
       <a href="./nontech/prodcom.html" class="item" style="text-decoration: none; color: inherit;">
       <div>
         <h1>ProdCom 2024</h1>
