@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1,">
   <title>pratiek with an ie</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css">
@@ -11,7 +11,9 @@
   <link rel="stylesheet" href="style.css">
   <script defer src="app.js"></script>
   <style>
-
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 
     .background-icon {
     position: absolute;
@@ -218,6 +220,26 @@ svg {
       }
     }
     
+      .bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playfair-display{
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
   </style>
 </head>
 <body>
@@ -297,6 +319,15 @@ svg {
     </div>
   </section>
 
+  <section id="myTimeTable">
+    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 150px">
+      <h3 class="secondary dancing-script" style="font-size: 40px">Time Table</h3>
+    <div id="time-table"></div>
+    </div>
+    
+  </section>
+  
+
   <!-- Background icons -->
 
   <i class="bi bi-camera-reels-fill background-icon icon-2"></i> 
@@ -307,6 +338,8 @@ svg {
 
   <!-- Footer -->
   <div id="footer-placeholder"></div>
+  
+
   
   <script src="app.js"></script>
   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>

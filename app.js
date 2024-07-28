@@ -6,6 +6,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+  fetch('/timetable.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("time-table").innerHTML = data;
+    });
+});
+
 document.querySelectorAll('.faq').forEach(faq => {
   faq.addEventListener('click', () => {
     faq.classList.toggle('active');

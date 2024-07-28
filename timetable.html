@@ -1,0 +1,139 @@
+    <style>
+        .timetable-body {
+            margin: 0;
+            background: linear-gradient(45deg, #49a09d, #5f2c82);
+            font-family: sans-serif;
+            font-weight: 100;
+            margin-top: 150px;
+        }
+
+        .timetable-container {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .timetable-table {
+            width: 800px;
+            border-collapse: collapse;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .timetable-th,
+        .timetable-td {
+            padding: 15px;
+            background-color: rgba(255,255,255,0.2);
+            color: #fff;
+        }
+
+        .timetable-th {
+            text-align: left;
+        }
+
+        .timetable-thead .timetable-th {
+            background-color: #55608f;
+        }
+
+        .timetable-tbody .timetable-tr:hover {
+            background-color: rgba(255,255,255,0.3);
+        }
+
+        .timetable-tbody .timetable-td {
+            position: relative;
+        }
+
+        .timetable-tbody .timetable-td:hover:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: -9999px;
+            bottom: -9999px;
+            background-color: rgba(255,255,255,0.2);
+            z-index: -1;
+        }
+
+        .small-padding{
+            padding: 15px;
+            padding-right: 7px;
+        }
+
+    </style>
+
+<body class="timetable-body">
+    <div class="timetable-container">
+        <table class="timetable-table">
+            <thead class="timetable-thead">
+                <tr>
+                    <th class="timetable-th"> </th>
+                    <th class="timetable-th">Mon</th>
+                    <th class="timetable-th">Tues</th>
+                    <th class="timetable-th">Wed</th>
+                    <th class="timetable-th">Thur</th>
+                    <th class="timetable-th">Fri</th>
+                </tr>
+            </thead>
+            <tbody class="timetable-tbody">
+                
+                <tr class="timetable-tr">
+                    <td class="timetable-td">8:30 - 9:30</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">MM 331</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                </tr>
+                <tr class="timetable-tr">
+                    <td class="timetable-td">9:30 - 10:30</td>
+                    <td class="timetable-td">MM 329</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">MM 331</td>
+                    <td class="timetable-td"> </td>
+                </tr>
+                <tr class="timetable-tr">
+                    <td class="timetable-td">10:30 - 11:30</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">MM 329</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                </tr>
+                <tr class="timetable-tr">
+                    <td class="timetable-td">11:30 - 12:30</td>
+                    <td class="timetable-td">MM 331</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">MM 329</td>
+                    <td class="timetable-td"> </td>
+                </tr>
+                <tr class="timetable-tr">
+                    <td class="timetable-td">14:00 - 17:00 (L)</td>
+                    <td class="timetable-td">MM 335</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">MM 341</td>
+                    <td class="timetable-td"> </td>
+                </tr>
+                <tr class="timetable-tr">
+                    <td class="timetable-td">15:30 - 17:00</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">ENT 602</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">ENT 602</td>
+                </tr>
+                <tr class="timetable-tr">
+                    <td class="timetable-td">17:30 - 19:00</td>
+                    <td class="timetable-td">MM 333</td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td"> </td>
+                    <td class="timetable-td">MM 333</td>
+                    <td class="timetable-td"> </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
